@@ -3,9 +3,9 @@ variable "location" {
   type        = string
 }
 
-variable "naming_suffix" {
-  description = "The naming suffix which will be used for the name generation of this Virtual Network."
-  type        = list(string)
+variable "name" {
+  description = "The name (should follow consistent naming convention) which will be used for the name generation of this Virtual Network."
+  type        = string
 }
 
 variable "resource_group_name" {

@@ -1,14 +1,5 @@
-locals {
-  vnet_name = module.naming.virtual_network.name
-}
-
-module "naming" {
-  source = "github.com/k0kazpt/terraform-azurerm-modules//modules/_external/terraform-azurerm-naming"
-  suffix = var.naming_suffix
-}
-
 resource "azurerm_virtual_network" "main_vnet" {
-  name                = local.vnet_name
+  name                = var.name
   resource_group_name = var.resource_group_name
   address_space       = var.vnet_cidr
   location            = var.location
