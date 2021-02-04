@@ -9,6 +9,5 @@ resource "azurerm_virtual_network" "vnet" {
   location            = data.azurerm_resource_group.vnet.location
   address_space       = var.address_space
   dns_servers         = var.dns_servers
-  tags                = var.tags
-  custom_tags         = var.custom_tags
+  tags                = concat(var.tags, var.custom_tags)
 }

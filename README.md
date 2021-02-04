@@ -33,7 +33,6 @@
 | address\_space | The address space of the newly created vNet |
 | location | The location of the newly created vNet |
 | name | The Name of the newly created vNet |
-| subnet\_ids | The ids of subnets created inside the new vNet |
 | vnet\_id | The id of the newly created vNet |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
