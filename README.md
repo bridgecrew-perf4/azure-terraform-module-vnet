@@ -22,6 +22,7 @@
 | address\_space | The address space that is used by the virtual network. Example: ["10.0.1.0/22"] | `list(string)` | n/a | yes |
 | custom\_tags | Custom tags that will be merged with the default tags. | `map(string)` | `{}` | no |
 | dns\_servers | The DNS servers to be used with vNet. If no values specified, this defaults to Azure DNS. | `list(string)` | `[]` | no |
+| location | Location where the virtual network will be created! | `string` | n/a | yes |
 | name | The name (should follow consistent naming convention) which will be used for the name generation of this Virtual Network. | `string` | n/a | yes |
 | resource\_group\_name | Name of the resource group where the virtual network will be created. | `string` | n/a | yes |
 | tags | Tags to be applied to the created resource. | `map(string)` | <pre>{<br>  "ManagedBy": "Terraform"<br>}</pre> | no |

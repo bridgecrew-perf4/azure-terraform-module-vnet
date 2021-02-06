@@ -3,6 +3,11 @@ variable "name" {
   type        = string
 }
 
+variable "location" {
+  description = "Location where the virtual network will be created!"
+  type        = string
+}
+
 variable "resource_group_name" {
   description = "Name of the resource group where the virtual network will be created."
   type        = string
