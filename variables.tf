@@ -4,7 +4,7 @@ variable "name" {
 }
 
 variable "resource_group_name" {
-  description = "Name of the resource group to be imported."
+  description = "Name of the resource group where the virtual network will be created."
   type        = string
 }
 
